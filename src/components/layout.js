@@ -4,6 +4,7 @@ import Style from './layoutcss.module.css';
 
 
 export default ({children}) => (
+	<div>
 	<div className={Style.header}>
 	<div className={Style.menu}>
 		<ul className={Style.menu_item}>
@@ -14,5 +15,7 @@ export default ({children}) => (
 			<li className={Style.list}>Contact</li>
 		</ul>
 	</div>
+	</div>
+	{children}
 	</div>
 	)
